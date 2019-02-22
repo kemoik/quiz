@@ -9,20 +9,9 @@
   <link href="https://fonts.googleapis.com/css?family=Coiny|Gloria+Hallelujah|Laila|Lato" rel="stylesheet">
   <body>
     <div class="container">
-    <div class="jumbotron">
-      <h1>    QUIZ-BOARD   </h1>
-    </div>
-    <form id="names">
-      <div class="form-group>"
-     <label for="name">Enter your name in the space below</label><br>
-       Name:<br>
-      <input id="name1" class="form-control" type="text" name="firstname"><br>
-      <button type="submit" class="btn">ENTER</button>
-      </div>
-    </form>
-    <div class="names">
-    Hey <span id="name"></span> please answer the following questions to the best of your knowledge.There are only ten questions in this page,answer all the questions:
-   </div>
+
+      <center><h1>    QUIZ-BOARD   </h1><center>
+  <div class="jumbotron">
     <h1>QUESTIONS</h1>
     <form id="font">
     <p>1:What is the official name of javascript?</p>
@@ -31,7 +20,7 @@
     <label><input type="radio" name="question1" value="0">C:EMCAscript</label><br>
     <br><br>
     <p>2:What does the result NaN stand for?</p>
-    <label><input type="radio" name="question2" value="20" required">A:Not a number</label><br>
+    <label><input type="radio" name="question2" value="20" required>A:Not a number</label><br>
     <label><input type="radio" name="question2" value="0">B:Not a null</label><br>
     <label><input type="radio" name="question2" value="0">C:Not a numerator</label><br>
     <br><br>
@@ -51,13 +40,14 @@
     <label><input type="radio" name="question5" value="20">C:Numbers</label><br>
     <br><br>
 
-    <button type="submit" name="button">submit</button>
+    <button type="submit" class="btn" name="button">submit</button>
     <br><br>
     </form>
     <br>
-    <p>Your sore is;</p>
+    <p id="">Your sore is;</p>
 
-   <div id="display" ></div> %
+   <div id="display" ></div>
+</div>
     </div>
     <script   src="https://code.jquery.com/jquery-3.3.1.min.js"   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="   crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>

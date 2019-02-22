@@ -10,33 +10,73 @@
   <body>
     <div class="container">
     <div class="jumbotron">
-      <h1>QUIZ-BOARD</h1>
+      <h1>    QUIZ-BOARD   </h1>
     </div>
-    <p>Please answer the following questions to the best of your knowledge.There are only five questions in this page,answer all the questions:</p><br>
-    <h1>QUESTIONS</h1>
-    <form class="" action="index.html" method="post">
-    <p>1:What is the official name of javascript?</p>
-    <div class="radio">
-    <label><input type="radio" name="question1" value="A">A:ECMEscript</label>
-    </div>
-    <div class="radio">
-    <label><input type="radio" name="question1" value="B">B:ECMAscript</label>
-    </div>
-    <div class="radio">
-    <label><input type="radio" name="question1" value="C">C:EMCAscript</label>
-    </div>
-    <br><br>
-    <p>2;What does the result NaN stand for?</p>
-    <div class="radio">
-    <label><input type="radio" name="question2" value="A">A:Not a number</label>
-    </div>
-    <div class="radio">
-    <label><input type="radio" name="question2" value="B">B:Not a null</label>
-    </div>
-    <div class="radio">
-    <label><input type="radio" name="question2" value="C">C:Not a numerator</label>
-    </div>
+    <form id="names">
+      <div class="form-group>"
+     <label for="name">Enter your name in the space below</label><br>
+      First name:<br>
+      <input id="name1" class="form-control" type="text" name="firstname"><br>
+      <button type="submit" class="btn">ENTER</button>
+      </div>
     </form>
+    <div class="names">
+    Hey <span id="name"></span> please answer the following questions to the best of your knowledge.There are only ten questions in this page,answer all the questions:
+  </div>
+    <h1>QUESTIONS</h1>
+    <form class="font">
+    <p>1:What is the official name of javascript?</p>
+    <label><input type="radio" name="question1" value="0">A:ECMEscript</label><br>
+    <label><input type="radio" name="question1" value="10">B:ECMAscript</label><br>
+    <label><input type="radio" name="question1" value="0">C:EMCAscript</label><br>
+    <br><br>
+    <p>2:What does the result NaN stand for?</p>
+    <label><input type="radio" name="question2" value="A">A:Not a number</label>
+    <label><input type="radio" name="question2" value="B">B:Not a null</label>
+    <label><input type="radio" name="question2" value="C">C:Not a numerator</label>
+    <br><br>
+    <p>3:In javascript what do we call a series of characters inside  quotation marks?</p>
+    <label><input type="radio" name="question3" value="A">A:Methods</label>
+    <label><input type="radio" name="question3" value="B">B:String</label>
+    <label><input type="radio" name="question3" value="C">C:Variable</label>
+    <br><br>
+    <p>4:Whenever we want to round of a number to a certain number of decimal points which method do we use?</p>
+    <label><input type="radio" name="question4" value="A">A:.toString</label>
+    <label><input type="radio" name="question4" value="B">B:.toRoundOff</label>
+    <label><input type="radio" name="question4" value="C">C:.toFixed</label>
+    <br><br>
+    <p>5:Which one of the following is <strong>NOT</strong> a basic data type in javascript?</p>
+    <label><input type="radio" name="question5" value="A">A:Boolean</label>
+    <label><input type="radio" name="question5" value="B">B:Function</label>
+    <label><input type="radio" name="question5" value="C">C:Numbers</label>
+    <br><br>
+    <p>6:Which one of the following is not a javascript function?</p>
+    <label><input type="radio" name="question6" value="A">A:Call</label>
+    <label><input type="radio" name="question6" value="B">B:Alert</label>
+    <label><input type="radio" name="question6" value="C">C:Prompt</label>
+    <p>7:Which JS function do we use to change a string to a number?</p>
+    <label><input type="radio" name="question7" value="A">A:parseNum</label>
+    <label><input type="radio" name="question7" value="B">B:parseStr</label>
+    <label><input type="radio" name="question7" value="C">C:parseInt</label>
+    <br><br>
+    <p>8:What does the logical operator <em>||</em> mean?</p>
+    <label><input type="radio" name="question8" value="A">A:Both are true</label>
+    <label><input type="radio" name="question8" value="B">B:None is true</label>
+    <label><input type="radio" name="question8" value="C">C:Either is true</label>
+    <br><br>
+    <p>9:Which one of the following is <strong>NOT</strong> a jQuery simple effect?</p>
+    <label><input type="radio" name="question9" value="A">A:show</label>
+    <label><input type="radio" name="question9" value="B">B:hide</label>
+    <label><input type="radio" name="question9" value="C">C:animate</label>
+    <br><br>
+    <p>10:Is JAVASCRIPT and JAVA the same thing?</p>
+    <label><input type="radio" name="question10" value="A">A:YES</label>
+    <label><input type="radio" name="question10" value="B">B:NO</label>
+    <button type="submit" name="button">submit</button>
+    <br><br>
+    </form>
+
+  <div id="display"></div>
     </div>
     <script   src="https://code.jquery.com/jquery-3.3.1.min.js"   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="   crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>

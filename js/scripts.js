@@ -18,5 +18,13 @@ $(document).ready(function() {
       var results =(qst1 + qst2 + qst3 + qst4 + qst5 );
 //UI LOGIC
       $("#display").text(results)
+      var exam = (results);
+      if (exam >= 80) {
+        alert("EXCELLENTLY PASSED");
+      }else if (exam >= 50 && exam <= 80) {
+        alert("FAIRLY PASSED")
+      }else {
+        alert("POORLY DONE NEED TO RETAKE")
+      }
     });
 });

@@ -17,3 +17,9 @@
   font-family: 'Gloria Hallelujah', cursive;
   font-size: 18px;
 }
+#start {
+  font-size: 16px;
+}
+#body {
+  background-image: url(https://www.pitneybowes.com/content/dam/pitneybowes/us/en/customer-information-management/data-management/17_SWS_04135_CIM%20Spectrum%20Data%20Science_1220x760_Image.jpg);
+}

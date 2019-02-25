@@ -15,7 +15,7 @@ $(document).ready(function() {
       var qst3 = parseInt($("input:radio[name=question3]:checked").val());
       var qst4 = parseInt($("input:radio[name=question4]:checked").val());
       var qst5 = parseInt($("input:radio[name=question5]:checked").val());
-      var results =(qst1 + qst2 + qst3 + qst4 + qst5 );
+      var results =((qst1 + qst2 + qst3 + qst4 + qst5)/100*100 +"%");
 //UI LOGIC
       $("#display").text(results)
       var exam = (results);

@@ -18,7 +18,6 @@ $(document).ready(function() {
       var resultss =(qst1 + qst2 + qst3 + qst4 + qst5);
       var results =(qst1 + qst2 + qst3 + qst4 + qst5)/100*100 +"%";
 //UI LOGIC
-      $("input").prop("diabled",true);
       $("#display").text(results)
       var exam = (resultss);
       if (exam >= 80) {
